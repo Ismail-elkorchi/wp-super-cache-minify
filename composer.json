@@ -1,0 +1,31 @@
+{
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "wp-coding-standards/wpcs": "dev-develop",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "fix:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+    },
+    "require": {
+        "mrclay/minify": "^3.0.14",
+        "tedivm/jshrink": "^1.6.8"
+    },
+    "replace": {
+        "tubalmartin/cssmin": "*",
+        "marcusschwarz/lesserphp": "*",
+        "monolog/monolog": "*",
+        "mrclay/jsmin-php": "*",
+        "intervention/httpauth":"*",
+        "mrclay/props-dic":"*"
+
+
+
+    }
+}
